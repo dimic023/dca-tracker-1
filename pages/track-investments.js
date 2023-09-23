@@ -166,7 +166,6 @@ export const getServerSideProps = async (context) => {
   const filteredCoins = await res.json();
 
   let purchases = [];
-
   let session;
   try {
     session = await getSession({ req: context.req });
